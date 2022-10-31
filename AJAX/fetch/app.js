@@ -13,8 +13,19 @@ btns.forEach(btn => {
         // console.log( src );
 
 
-        fetch(src)
-            .then(response => console.log( response.body ));
+        // Execute la requete
+        fetch(src) 
+            // Lorsqu'on reçoit la réponse de la requete, on converti la réponse ne JSON
+            .then(response => response.json())
+            // Lorsque la réponse en convertie en json ...
+            .then(data => {
+                // console.log(data)
+                target.innerText = `${data.firstname} ${data.lastname}`;
+            })
+            .catch(error => {
+                console.log( error );
+            })
+        ;
 
 
     });
