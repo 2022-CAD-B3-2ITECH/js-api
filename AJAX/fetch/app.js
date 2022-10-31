@@ -10,7 +10,11 @@ btns.forEach(btn => {
 
         // Recup de la valeur de data-src
         const src = btn.dataset.src;
-        console.log( src );
+        // console.log( src );
+
+
+        fetch(src)
+            .then(response => console.log( response.body ));
 
 
     });
