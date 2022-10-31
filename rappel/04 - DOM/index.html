@@ -28,10 +28,26 @@
         </div>
 
         <div>
+            <label for="isCompany">Is company</label>
+            <input type="checkbox" id="isCompany" name="isCompany">
+        </div>
+
+        <div hidden id="companyName">
+            <label for="companyName">Company Name</label>
+            <input type="text" id="companyName" name="companyName">
+        </div>
+
+        <div>
             <label for="birthday[day]">Birthday</label>
-            <select name="birthday[day]" id="birthday[day]"></select>
-            <select name="birthday[month]" id="birthday[month]"></select>
-            <select name="birthday[year]" id="birthday[year]"></select>
+            <select name="birthday[day]" id="birthday[day]">
+                <option value="" selected disabled></option>
+            </select>
+            <select name="birthday[month]" id="birthday[month]">
+                <option value="" selected disabled></option>
+            </select>
+            <select name="birthday[year]" id="birthday[year]">
+                <option value="" selected disabled></option>
+            </select>
         </div>
 
 
