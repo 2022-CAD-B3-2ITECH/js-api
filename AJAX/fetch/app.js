@@ -8,10 +8,11 @@ btns.forEach(btn => {
     // Ecouter les evenements (click) sur les boutons
     btn.addEventListener('click', event => {
 
+        // Recup de la valeur de data-src
+        const src = btn.dataset.src;
+        console.log( src );
 
 
-
-        
     });
 
 });
