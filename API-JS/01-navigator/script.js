@@ -1,11 +1,9 @@
-// console.log( navigator );
+console.log( navigator );
 // console.log( navigator.vendor );
 
 
 
-
-
-console.log( 'Navigator' );
+console.log( 'Navigator (properties)' );
 console.log( '===============================================================' );
 
 console.log( '=> vendor\t\t\t\t',           navigator.vendor );
@@ -21,6 +19,7 @@ console.log( '=> cookieEnabled\t\t',        navigator.cookieEnabled );
 
 // Memoire de l'appareil en Gigaoctets
 console.log( '=> deviceMemory\t\t\t',       navigator.deviceMemory );
+
 console.log( '=> doNotTrack\t\t\t',         navigator.doNotTrack );
 console.log( '=> language\t\t\t\t',         navigator.language );
 console.log( '=> languages\t\t\t\t',        navigator.languages );
@@ -44,20 +43,28 @@ console.log( '=> battery \t\t\t\t',         navigator.battery );
 console.log( '=> oscpu \t\t\t\t',           navigator.oscpu );
 console.log( '=> platform \t\t\t',          navigator.platform );
 
-// console.log( '=> scheduling\t\t\t',         navigator.scheduling );
-// console.log( '=> credentials\t\t\t',        navigator.credentials );
-// console.log( '=> geolocation\t\t\t',        navigator.geolocation );
-// console.log( '=> keyboard\t\t\t\t',         navigator.keyboard );
-// console.log( '=> locks\t\t\t\t',            navigator.locks );
-// console.log( '=> mediaCapabilities\t',      navigator.mediaCapabilities );
-// console.log( '=> mediaDevices\t\t\t',       navigator.mediaDevices );
-// console.log( '=> permissions\t\t\t',        navigator.permissions );
-// console.log( '=> presentation\t\t\t',       navigator.presentation );
-// console.log( '=> serial\t\t\t',             navigator.serial );
+
+
+console.log( '' );
+
+console.log( 'Navigator (methods)' );
+console.log( '===============================================================' );
+
+
+console.log( '=> scheduling\t\t\t',         navigator.scheduling );
+console.log( '=> credentials\t\t\t',        navigator.credentials );
+console.log( '=> geolocation\t\t\t',        navigator.geolocation );
+console.log( '=> keyboard\t\t\t\t',         navigator.keyboard );
+console.log( '=> locks\t\t\t\t',            navigator.locks );
+console.log( '=> mediaCapabilities\t',      navigator.mediaCapabilities );
+console.log( '=> mediaDevices\t\t\t',       navigator.mediaDevices );
+console.log( '=> permissions\t\t\t',        navigator.permissions );
+console.log( '=> presentation\t\t\t',       navigator.presentation );
+console.log( '=> serial\t\t\t',             navigator.serial );
 console.log( '=> serviceWorker\t\t\t',      navigator.serviceWorker );
 console.log( '=> storage\t\t\t\t',          navigator.storage );
-// console.log( '=> xr \t\t\t\t\t',            navigator.xr );
-// console.log( '=> wakeLock \t\t\t',          navigator.wakeLock );
+console.log( '=> xr \t\t\t\t\t',            navigator.xr );
+console.log( '=> wakeLock \t\t\t',          navigator.wakeLock );
 
 console.log( '' );
 
