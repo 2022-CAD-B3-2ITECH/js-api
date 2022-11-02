@@ -1,9 +1,12 @@
-// if (navigator.onLine) {
-//     console.log('connecté');
-// } else {
-//     console.log('hors ligne');
-// }
+if (navigator.onLine) {
+    console.log('connecté');
+} else {
+    console.log('hors ligne');
+}
   
+
+// console.log( navigator.onLine );
+
 // window.addEventListener('offline',  event => console.log( 'You appear Offline' ) );
 // window.addEventListener('online',   event => console.log( 'You appear Online' ) );
 

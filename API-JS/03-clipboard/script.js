@@ -13,6 +13,8 @@ function selectionHandler( event )
     const selection     = window.getSelection();
     const range         = document.createRange();
 
+    console.log(selection);
+
     // Selection boundary
     const start         = selection.baseOffset;
     const end           = selection.extentOffset;
