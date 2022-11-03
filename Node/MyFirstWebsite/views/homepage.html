@@ -8,7 +8,19 @@
 </head>
 <body>
     
+    <nav>
+        <a href="/">Accueil</a> - 
+        <a href="/about">Qui sommes nous</a> - 
+        <a href="/terms">Conditions d'utilisation</a>
+    </nav>
+
     <h1>Homepage</h1>
-    
+
+    <ul>
+        <% for (let fruit of fruits_view) { %>
+            <li><%= fruit %></li>
+        <% } %>
+    </ul>
+
 </body>
 </html>
