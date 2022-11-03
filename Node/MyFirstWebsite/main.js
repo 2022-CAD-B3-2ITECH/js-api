@@ -8,6 +8,7 @@ const express = require('express');
 const app = express();
 
 const ejs = require('ejs');
+const path = require('path');
 
 const guessPort = require('./utils/ports');
 // const port = guessPort();
@@ -17,6 +18,14 @@ const port = 8080;
 // App Setup 
 // --
 
+// Définition du répertoire de stockage des fichiers de vues
+app.set('views', path.join(__dirname, "views"));
+
+// Utilisation du moteur de rendu HTML
+app.set('view engine', "html");
+
+// Definition du moteur de rendu
+app.engine('html', ejs.__express);
 
 
 
