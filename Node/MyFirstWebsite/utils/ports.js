@@ -2,7 +2,12 @@
 
 const net = require('net');
 
-module.exports = new function()
+/**
+ * Guess an available Port
+ * 
+ * @return {number}
+ */
+module.exports = function()
 {
     // Creation d'un serveur avec le module "net"
     const server = net.createServer();
