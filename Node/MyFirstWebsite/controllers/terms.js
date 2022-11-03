@@ -12,7 +12,7 @@ const router = express.Router();
 
 router.get("/terms", (request, response) => {
 
-    response.send("Hello Terms page !!!");
+    response.render('terms', {});
 
 })
 

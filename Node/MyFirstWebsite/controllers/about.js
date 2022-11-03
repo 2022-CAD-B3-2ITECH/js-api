@@ -12,7 +12,7 @@ const router = express.Router();
 
 router.get("/about", (request, response) => {
 
-    response.send("Hello About Page !!!");
+    response.render('about', {});
 
 })
 
