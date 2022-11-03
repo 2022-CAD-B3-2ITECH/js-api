@@ -7,6 +7,8 @@
 const express = require('express');
 const app = express();
 
+const ejs = require('ejs');
+
 const guessPort = require('./utils/ports');
 // const port = guessPort();
 const port = 8080;
@@ -24,6 +26,11 @@ const port = 8080;
 app.use(require('./controllers/homepage'));
 app.use(require('./controllers/about'));
 app.use(require('./controllers/terms'));
+
+app.use((request, response) => {
+    response.status(404);
+    response.send('Ooops document not found !')
+});
 
 
 
