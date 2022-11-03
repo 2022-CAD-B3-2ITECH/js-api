@@ -1,0 +1,20 @@
+http://www.site.fr/my/awesome/file.html
+ftp://username:password@site.fr/my/awesome
+
+Schema:                 http
+Protocol:               http://
+
+Nom de domaine:         www.site.fr
+tld Top Level domain:   .fr             Géré par un registrar
+Domain:                 site            site.fr => 92.12.765.34
+SubDomain:              www             > Envois vers le repertoire /usr/www/a 
+                        client          > Envois vers le repertoire /usr/www/b  
+                                        /usr/www/a/my/awesome  
+
+Path:                   /my/awesome/file.html
+Repertoires:            /my/awesome/
+Fichier:                file.html
+
+filename:               file.html
+file:                   file
+extension:              .html
