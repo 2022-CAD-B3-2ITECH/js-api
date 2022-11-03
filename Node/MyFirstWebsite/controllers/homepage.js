@@ -12,7 +12,11 @@ const router = express.Router();
 
 router.get("/", (request, response) => {
 
-    response.send("Hello There !!!");
+    // Modifie la réponse avec un message
+    // response.send("Hello There !!!");
+
+    // Modifie la réponse avec une vue
+    response.render('homepage')
 
 })
 
