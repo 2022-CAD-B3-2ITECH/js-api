@@ -7,7 +7,10 @@
 const express = require('express');
 const app = express();
 
+// EJS - Embed JS Template
 const ejs = require('ejs');
+
+// Module path pour résoudre les chemins
 const path = require('path');
 
 const guessPort = require('./utils/ports');
@@ -27,6 +30,7 @@ app.set('view engine', "html");
 // Definition du moteur de rendu
 app.engine('html', ejs.__express);
 
+// Definition du répertoire public (css, js (front), images)
 
 
 // Routing
@@ -48,4 +52,5 @@ app.use((request, response) => {
 
 app.listen(port, () => console.log(`App is listening on port : http://127.0.0.1:${port}`));
 
+// Export du port pour l'app electron
 module.exports = port;

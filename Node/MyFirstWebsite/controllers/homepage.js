@@ -12,8 +12,12 @@ const router = express.Router();
 
 router.get("/", (request, response) => {
 
-    const fruits_controller = ["Pommes","Poires","Bananes","Kiwis","Fraises"];
+    let fruits_controller = ["Pommes","Poires","Bananes","Kiwis","Fraises"];
 
+    for (let index = 0; index < fruits_controller.length; index++) 
+    {
+        fruits_controller[ index ] = fruits_controller[index].toUpperCase()
+    }
 
     // Modifie la réponse avec un message
     // response.send("Hello There !!!");
