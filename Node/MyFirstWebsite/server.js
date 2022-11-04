@@ -14,8 +14,8 @@ const ejs = require('ejs');
 const path = require('path');
 
 const guessPort = require('./utils/ports');
-const port = guessPort();
-// const port = 8080;
+// const port = guessPort();
+const port = 8080;
 
 
 // App Setup 
@@ -31,6 +31,7 @@ app.set('view engine', "html");
 app.engine('html', ejs.__express);
 
 // Definition du répertoire public (css, js (front), images)
+app.use( express.static( path.join( __dirname, "public" ) ) )
 
 
 // Routing

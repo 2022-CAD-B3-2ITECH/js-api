@@ -33,3 +33,23 @@ Dans le fichier `package.json`, à la section `scripts`, ajouter:
 - `serve`: `npm run serve` permet à node de déclencher le `nodemon` local du projet
 - `start`: `npm run start` permet à node de déclencher `electron` local du projet (pour le dev)
 - `build`: `npm run build` permet à node de déclencher le build final du projet electron
+
+## Memo EJS
+
+Execute du code JavaScript
+
+```ejs
+<% // code ejs %>
+```
+
+Affiche le contenu de la variable
+
+```ejs
+<%= variable %>
+```
+
+Inclusion de portion de code EJS
+
+```ejs
+<%- include('file.html') -%>
+```
