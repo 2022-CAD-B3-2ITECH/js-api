@@ -46,7 +46,7 @@ app.use((request, response) => {
 // Start server App
 // --
 
-app.listen(port, () => console.log(`App is listening on port : http://127.0.0.1:${port}`));
+app.listen(port, () => console.log(`App is listening on address : http://127.0.0.1:${port}`));
 
 // Export du port pour l'app electron
 module.exports = port;

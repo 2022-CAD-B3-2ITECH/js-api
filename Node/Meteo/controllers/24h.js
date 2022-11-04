@@ -18,6 +18,7 @@ router.get("/24h", async (request, response) => {
         const ip = await getIp();
         const location = await getLocation(ip);
         const weather = await getWeather(location.lat, location.lon);
+
         const units = weather.hourly_units;
 
         const current_date = new Date();
@@ -82,7 +83,9 @@ router.get("/24h", async (request, response) => {
         });
     } catch (e) {
         console.log(e);
-        response.render('pages/error');
+        response.render('pages/error', {
+            message: e.message
+        });
     }
 })
 
