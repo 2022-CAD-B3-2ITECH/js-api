@@ -12,7 +12,7 @@ const myVar_C = "C";
 // -----------------------------------------------------------------------------
 
 
-// for (var i=0; i<10; i++)
+// for (var i=0; i<3; i++)
 // {
 //     console.log(i);
 // }
@@ -20,15 +20,12 @@ const myVar_C = "C";
 // console.log(i);
 
 
-for (let i=0; i<10; i++)
+for (let i=0; i<3; i++)
 {
-    for (let j = 0; j < 3; j++) 
-    {
-        console.log(i);
-    }
+    console.log(i);
 }
 console.log('----');
-// console.log(i);
+console.log(i);
 
 
 // -----------------------------------------------------------------------------
