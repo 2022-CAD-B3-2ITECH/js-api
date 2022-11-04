@@ -7,6 +7,16 @@ Créer une seconde page pour afficher la météo du jour
 
 
 
+Les ressources
+========================
+npm i express
+npm i ejs
+npm i axios
+npm i --save-dev nodemon
+npm i --save-dev electron
+npm i --save-dev electron-builder
+
+
 Les sources
 ========================
 
